@@ -14,7 +14,8 @@
 
   <?php
     $moji = htmlspecialchars($_POST['a'], ENT_QUOTES);
-    echo $moji;
+    
+    echo isset($_POST['a']) && $_POST["a"] != '' ? $moji."にゃ" : "何かしゃべって";
   ?>
 </body>
 </html>
